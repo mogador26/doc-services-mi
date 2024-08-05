@@ -41,5 +41,9 @@
     "markdown-it-attrs": "^4.1.6",
     "markdown-it-container": "^4.0.0",
     "pagefind": "^1.0.4"
+  },
+  "dependencies": {
+    "eleventy-plugin-reading-time": "^0.0.1",
+    "mermaid": "^10.9.1"
   }
 }

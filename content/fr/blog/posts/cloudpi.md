@@ -4,62 +4,37 @@ description: Description des services cloud proposés.
 date: git Last Modified
 tags:
   - cloud
-  - iaas
   - caas
   - kubernetes
 ---
-La syntaxe utilisée dans les fichiers Markdown `.md` du site suit la spécification [CommonMark](https://commonmark.org/).
+<script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+      mermaid.initialize({ startOnLoad: true });
+</script>
 
-[Voir un rappel des principaux éléments](https://commonmark.org/help/){.fr-link .fr-fi-arrow-right-line .fr-link--icon-right}
+L'offre s'articule sur deux pans :
+- le Cloud PI ` iaas openstack `. La documentation de l'offre est présentée sur le [portail PI](https://pi.interieur.rie.gouv.fr/home-dnum/cloud-%cf%80/qui-sommes-nous/cloud-iaas-gen2/).
+- le Cloud PI `Native`. La documentation de l'offre est présentée sur le site [Cloud PI Native](https://pi.interieur.rie.gouv.fr/home-dnum/cloud-%cf%80/qui-sommes-nous/cloud-iaas-gen2/).
+  
+**Services Applicatifs sous k8s**
 
-**De nouveaux éléments** ont été ajoutés à cette syntaxe et sont disponibles dans eleventy-dsfr.
+<pre class="mermaid">
+  graph LR
+  client([client])-. Ingress-managed <br> load balancer .->ingress[Ingress]
+  ingress-->|routing rule|A[service 'A']
+  subgraph cluster
+  ingress
+  A-->pod1[Pod]
+  A-->pod2[Pod]
+  end
+  classDef plain fill:#ddd,stroke:#fff,stroke-width:4px,color:#000
+  classDef k8s fill:#326ce5,stroke:#fff,stroke-width:4px,color:#fff
+  classDef cluster fill:#fff,stroke:#bbb,stroke-width:2px,color:#326ce5
+  class ingress,A,pod1,pod2 k8s
+  class client plain
+  class cluster cluster
+</pre>
 
-## L'accordéon
 
-```md
-????accordionsgroup
-
-??? Intitulé accordéon
-
-Contenu **markdown** _riche_
-
-???
-
-????
-```
-[Voir aussi](/fr/blog/accordeon/#exemple-d-utilisation-dans-un-fichier-markdown-md){.fr-link .fr-fi-arrow-right-line .fr-link--icon-right}
-
-## L'alerte
-
-```md
-:::info Test d'alerte
-Contenu **Mardown**
-:::
-```
-
-[Voir aussi](/fr/blog/alerte/#exemple-d-utilisation-dans-un-fichier-markdown-md){.fr-link .fr-fi-arrow-right-line .fr-link--icon-right}
-
-## La citation
-
-```md
-:::quote
-« Lorem [...] elit ut. »
-:::
-```
-
-[Voir aussi](/fr/blog/citation/#exemple-d-utilisation-dans-un-fichier-markdown-md){.fr-link .fr-fi-arrow-right-line .fr-link--icon-right}
-
-## La mise en avant
-
-```md
-:::callout Titre mise en avant
-Les parents d’enfants de 11 à 14 ans n’ont aucune démarche à accomplir : les CAF versent <strong>automatiquement</strong> l’ARS aux familles déjà allocataires qui remplissent les conditions.
-:::
-```
-
-[Voir aussi](/fr/blog/mise-en-avant/#exemple-d-utilisation-dans-un-fichier-markdown-md){.fr-link .fr-fi-arrow-right-line .fr-link--icon-right}
-
-<br>
-
-La syntaxe utilisée pour le [cartouche](https://www.11ty.dev/docs/data-frontmatter/) en début de fichier est communément le [YAML](https://learnxinyminutes.com/docs/yaml/).
-Il peut contenir des données pré-définies par Eleventy ou personnalisées pour la page en cours.
+{%include "components/back_to_top.njk" %}
+~                                          

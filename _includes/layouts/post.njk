@@ -15,6 +15,9 @@ layout: layouts/base.njk
             <p class="fr-text--xs">
               {{ "published_on" | i18n }}
               <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>
+               <p>
+                  <span class="meta__stats">&#9201; de lecture {{ content | readingTime }}</span>
+               </p>
             </p>
           </hgroup>
         </div>

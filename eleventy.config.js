@@ -1,6 +1,8 @@
 const {DateTime} = require("luxon");
 const {nanoid} = require ("nanoid");
 
+const readingTime = require('eleventy-plugin-reading-time');
+
 const markdownItAnchor = require("markdown-it-anchor");
 const markdownItAttrs = require("markdown-it-attrs");
 const markdownItContainer = require("markdown-it-container");
@@ -60,10 +62,12 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(i18n, {
         translations,
         fallbackLocales: {
-            "en": "fr"
+            "en":"fr"
         }
     });
     eleventyConfig.addPlugin(pluginCalendar);
+    eleventyConfig.addPlugin(readingTime);
+    
 
     // Custom collections
     eleventyConfig.addCollection("allSortedByPathAsc", function(collectionApi) {
