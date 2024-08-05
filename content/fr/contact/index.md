@@ -7,4 +7,4 @@ eleventyNavigation:
   order: 2
 ---
 
-<contact@code.gouv.fr>
+<dtnum-architecture-entreprise@interieur.gouv.fr>

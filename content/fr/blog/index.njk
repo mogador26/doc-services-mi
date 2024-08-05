@@ -25,3 +25,19 @@
 {% set postslist = pagination.items %}
 {% include "postslist.njk" %}
 {% include "templates/pagination.njk" %}
+
+
+<div class="fr-mt-6v fr-mb-6w">
+
+
+{% from "components/component.njk" import component with context %}
+{{ component("callout", {
+    title: "Exemples d'utilisations",
+    description: "Il s'agit de composants markdown ou njk que vous pourrez utiliser pour décrire les élements de votre documentation",
+    link: {
+        url: "https://codegouvfr.github.io/eleventy-dsfr/fr/blog/tags/composant//",
+        title: "composants"
+  }
+}) }}
+
+</div>

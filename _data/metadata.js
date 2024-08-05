@@ -1,5 +1,5 @@
 module.exports = {
-    title: "Documentation des services socles",
+    title: "Services socles",
     url: "https://url_du_site.gouv.fr/",
     newsletter: [
         {
@@ -17,7 +17,7 @@ module.exports = {
     peertube_url: "",
     github_url: "",
     sourcehut_url: "",
-    repository_url: "https://github.com/mogador26/ref-doc-service-mi",
+    repository_url: "https://github.com/mogador26/ref-doc-services-mi",
     language: "fr",
     description: "DTNUM",
     author: {

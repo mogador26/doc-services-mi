@@ -1,10 +1,13 @@
 ---
-title: Syntaxe Markdown
-description: Rappel des éléments de syntaxe Markdown principaux et nouveaux éléments.
+title: CI/CD
+description: Description des services de CI/CD proposés.
 date: git Last Modified
 tags:
-  - contenu
-  - Markdown
+  - cloud
+  - dso
+  - iaas
+  - caas
+  - kubernetes
 ---
 La syntaxe utilisée dans les fichiers Markdown `.md` du site suit la spécification [CommonMark](https://commonmark.org/).
 

@@ -8,4 +8,7 @@ eleventyNavigation:
 slugOverride: a propos
 ---
 
-Nous sommes la mission logiciels libres.
+Initiatives du comité d'architecture. 
+
+L'objectif est de rassembler l'ensemble des documentations ou références des services socles sur un site. 
+Si la documentation existe déjà, le site fera référence au site porteur.
