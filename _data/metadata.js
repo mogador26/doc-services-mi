@@ -17,12 +17,12 @@ module.exports = {
     peertube_url: "",
     github_url: "",
     sourcehut_url: "",
-    repository_url: "https://github.com/mogador26/ref-doc-services-mi",
+    repository_url: "https://github.com/mogador26/doc-services-mi",
     language: "fr",
     description: "DTNUM",
     author: {
-        name: "Nom du service",
-        email: "contact@nom.du.service.gouv.fr",
+        name: "DTNUM",
+        email: "dtnum-architecture-entreprise@interieur.gouv.fr",
         url: "https://url_du_service.gouv.fr/"
     },
     service: "Ministère de l'intérieur"
