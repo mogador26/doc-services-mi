@@ -13,10 +13,11 @@ tags:
 </script>
 
 L'offre s'articule sur deux pans :
-- le Cloud PI ` iaas openstack `. La documentation de l'offre est présentée sur le [portail PI](https://pi.interieur.rie.gouv.fr/home-dnum/cloud-%cf%80/qui-sommes-nous/cloud-iaas-gen2/).
-- le Cloud PI `Native`. La documentation de l'offre est présentée sur le site [Cloud PI Native](https://pi.interieur.rie.gouv.fr/home-dnum/cloud-%cf%80/qui-sommes-nous/cloud-iaas-gen2/).
-  
-**Services Applicatifs sous k8s**
+- &#x2705; le Cloud PI ` iaas openstack `. 
+  - &#127919; La documentation de l'offre est présentée sur le [portail PI](https://pi.interieur.rie.gouv.fr/home-dnum/cloud-%cf%80/qui-sommes-nous/cloud-iaas-gen2/).
+- &#x2705; le Cloud PI `Native`. 
+  - &#127919; La documentation de l'offre est présentée sur le site <a target="_blank" rel="noopener external" href="https://cloud-pi-native.fr">Cloud PI Native</a>
+    - sous Cloud PI Native les **services applicatifs** sont représentés sous cette forme
 
 <pre class="mermaid">
   graph LR
