@@ -1,6 +1,8 @@
 const {DateTime} = require("luxon");
 const {nanoid} = require ("nanoid");
 
+const swaggerUiAssetPath = require('swagger-ui-dist').getAbsoluteFSPath();
+const path = require('path');
 const readingTime = require('eleventy-plugin-reading-time');
 
 const markdownItAnchor = require("markdown-it-anchor");
@@ -68,7 +70,15 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(pluginCalendar);
     eleventyConfig.addPlugin(readingTime);
     
-
+    // Importer le fichier de configuration Redoc
+    const redocConfig = require("./config/redoc-config.js");
+    // Appeler la configuration Redoc
+    redocConfig(eleventyConfig); 
+    
+    //swaggerUI
+    const swaggerUIConfig = require('./config/swagger-config.js') 
+    swaggerUIConfig(eleventyConfig)
+    
     // Custom collections
     eleventyConfig.addCollection("allSortedByPathAsc", function(collectionApi) {
         return collectionApi.getAll().sort((a, b) => {
