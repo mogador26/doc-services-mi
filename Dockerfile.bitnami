@@ -48,4 +48,4 @@ WORKDIR /usr/share/nginx/html/
 
 COPY --from=builder /usr/src/app/_site ./
 COPY --from=builder /usr/src/app/_site/fr/index.html ./index.html
-COPY nginx/nginx-run.template /opt/bitnami/nginx/conf/server_blocks/webserver.conf
+COPY config/nginx/nginx-run.template /opt/bitnami/nginx/conf/server_blocks/webserver.conf

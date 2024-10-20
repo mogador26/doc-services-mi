@@ -44,6 +44,8 @@
   },
   "dependencies": {
     "eleventy-plugin-reading-time": "^0.0.1",
-    "mermaid": "^10.9.1"
+    "mermaid": "^10.9.1",
+    "redoc": "^2.1.5",
+    "swagger-ui-dist": "^5.17.14"
   }
 }
