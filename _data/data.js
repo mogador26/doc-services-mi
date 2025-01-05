@@ -1,3 +1,3 @@
 module.exports = {
-    footer_content_description: `description des documents de services socles pour les produits numériques`
+    footer_content_description: `listes des API du ministère`
 }

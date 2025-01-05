@@ -1,18 +1,50 @@
 ---
-title: "Description de l'API Géo"
+title: "API Sample - description"
+swaggerApi: "/api/api-examples.yaml"
+layout: layouts/page.njk
 ---
 
-## Un exemple avec  l'API Géo
+## API Sample
 
-Cette page doit décrire :
-- Le rôle de l'API
-- A qui est destiné cette API ?
-- Quel est le niveau de service ?
+### Producteur
 
-Voici le [SwaggerUI](../annexes/swagger-api-geo) de l'API.
+Ce service a été produite par la direction de la transformation numérique.
 
+### Son rôle
 
-Voici le [Redoc](../annexes/redoc-api-geo) de l'API.
+-
+
+### &#128101; Pour qui ?
+
+- 
+
+### &#8987; Quel est le niveau de service ?
+
+-
+
+### &#127873; Les ré-utilisateurs
+
+- cas d'usage
+
+### &#128688; Vue technique
+
+????accordionsgroup
+
+??? Swagger
+
+{% swaggerUI swaggerApi %}
+
+???
+
+??? Redoc 
+
+{% redocUI swaggerApi %}
+
+???
+
+????
+
+<br>
 
 {%include "components/back_to_top.njk" %}
 

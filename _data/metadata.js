@@ -1,5 +1,5 @@
 module.exports = {
-    title: "Services socles",
+    title: "Catalogue d'API",
     url: "https://url_du_site.gouv.fr/",
     newsletter: [
         {
@@ -19,10 +19,10 @@ module.exports = {
     sourcehut_url: "",
     repository_url: "https://github.com/mogador26/doc-services-mi",
     language: "fr",
-    description: "DTNUM",
+    description: "Ministère de l'intérieur",
     author: {
         name: "DTNUM",
-        email: "dtnum-architecture-entreprise@interieur.gouv.fr",
+        email: "contact-api@interieur.gouv.fr",
         url: "https://url_du_service.gouv.fr/"
     },
     service: "Ministère de l'intérieur"
